@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dc_servo_motor\startup_stm32f103xb.o"
+"dc_servo_motor\main.o"
+"dc_servo_motor\stm32f1xx_it.o"
+"dc_servo_motor\stm32f1xx_hal_msp.o"
+"dc_servo_motor\stm32f1xx_hal_gpio_ex.o"
+"dc_servo_motor\stm32f1xx_hal_tim.o"
+"dc_servo_motor\stm32f1xx_hal_tim_ex.o"
+"dc_servo_motor\stm32f1xx_hal.o"
+"dc_servo_motor\stm32f1xx_hal_rcc.o"
+"dc_servo_motor\stm32f1xx_hal_rcc_ex.o"
+"dc_servo_motor\stm32f1xx_hal_gpio.o"
+"dc_servo_motor\stm32f1xx_hal_dma.o"
+"dc_servo_motor\stm32f1xx_hal_cortex.o"
+"dc_servo_motor\stm32f1xx_hal_pwr.o"
+"dc_servo_motor\stm32f1xx_hal_flash.o"
+"dc_servo_motor\stm32f1xx_hal_flash_ex.o"
+"dc_servo_motor\stm32f1xx_hal_exti.o"
+"dc_servo_motor\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DC_Servo_Motor\DC_Servo_Motor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DC_Servo_Motor.map" -o DC_Servo_Motor\DC_Servo_Motor.axf
